@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query | or logical</title>
+
+    <style>
+
+        html{
+            font-size: 1em;
+        }
+
+        /* how to use media query - part 05 */
+        @media screen and (width:300px), (orientation:landscape){
+            body{
+                color:brown;
+            }
+            /* it will work when one is true : width is exactly 300px or screen is in landscape */
+        }
+        
+        
+        </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quibusdam? Ab magnam saepe ipsum voluptatem repellat eveniet et est consequuntur doloribus nostrum autem eum hic inventore incidunt similique obcaecati, explicabo repellendus provident enim earum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quibusdam? Ab magnam saepe ipsum voluptatem repellat eveniet et est consequuntur doloribus nostrum autem eum hic inventore incidunt similique obcaecati, explicabo repellendus provident enim earum!</p>
+    
+</body>
+</html>
