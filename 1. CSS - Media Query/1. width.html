@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query - width</title>
+
+    <style>
+        html{
+            font-size: 1em;
+        }
+
+        /* how to use media query - part 01 */
+        @media screen and (width:700px){
+            body{
+                color: red;
+            }
+            /* now save and go to browser and click on inspect element --> mobile screen icon --> on above you see dimension responsive or responsive where some number is written. Now change the width to 600 because we mentioned above that on 600 width, change the color of text --> do it to see the output. */
+        }
+        /* how to use media query - part 02 */
+        @media screen and (max-width:500px){
+            body{
+                color:blueviolet;
+            }
+        }
+        </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quibusdam? Ab magnam saepe ipsum voluptatem repellat eveniet et est consequuntur doloribus nostrum autem eum hic inventore incidunt similique obcaecati, explicabo repellendus provident enim earum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quibusdam? Ab magnam saepe ipsum voluptatem repellat eveniet et est consequuntur doloribus nostrum autem eum hic inventore incidunt similique obcaecati, explicabo repellendus provident enim earum!</p>
+    
+</body>
+</html>
