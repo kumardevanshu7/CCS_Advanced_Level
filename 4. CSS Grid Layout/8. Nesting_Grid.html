@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Nesting</title>
+    <style>
+
+      .container{
+        display:grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap:20px;
+      }
+
+      .items{
+        background-color: aquamarine;
+        border: 2px solid black;
+        padding: 15px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+
+      /* this is the example of Nested-Grid */
+      .item-container{
+        display:grid;
+        grid-gap:10px;
+        grid-template-columns: repeat(3, auto);
+      }
+
+      .nested-item{
+        background-color: blueviolet;
+        border: 2px solid black;
+        color:white;
+        padding:3px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- nested-grid starts here -->
+      <div class="items item-container"> Tushpendra
+        <br>
+        Childs:
+        <br>
+        <div class="nested-item n-item-1">Jyoti</div>
+        <div class="nested-item n-item-2">Juhi</div>
+        <div class="nested-item n-item-3">Preeti</div>
+        <div class="nested-item n-item-4">Anam</div>
+        <div class="nested-item n-item-5">Kiran</div>
+      </div>
+      <div class="items">Anshika</div>
+      <div class="items">Ravi</div>
+      <div class="items">Dolly</div>
+      <div class="items">Faraz</div>
+      <div class="items">Deepa</div>
+      <div class="items">Devanshu</div>
+      <div class="items">Chhavi</div>
+      <div class="items">Mayank</div>
+      <div class="items">Mubasir</div>
+      <div class="items">Ekta</div>
+      <div class="items">Ashmit</div>
+      <div class="items">Akash</div>
+      <div class="items">Ishitav</div>
+      <div class="items">Mohit</div>
+      <div class="items">Karunesh</div>
+      
+    </div>
+  </body>
+</html>
