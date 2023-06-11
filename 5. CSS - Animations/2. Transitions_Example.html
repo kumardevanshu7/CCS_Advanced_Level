@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Models Transitions</title>
+    <style>
+
+        .main{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+      img {
+        width: 70px;
+        
+        /* border-radius: 50%; */
+        margin-right: 250px;
+        transition: width 2s, border-radius 2s;
+      }
+
+      img:hover{
+        width:500px;
+        border-radius:50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="model model1">
+        <img src="/imgs/m1.jpg" />
+      </div>
+      <div class="model model2">
+        <img src="/imgs/m2.jpg" />
+      </div>
+      <div class="model model3">
+        <img src="/imgs/m3.jpg" />
+      </div>
+      <div class="model model3">
+        <img src="/imgs/m4.jpeg" />
+      </div>
+    </div>
+  </body>
+</html>
