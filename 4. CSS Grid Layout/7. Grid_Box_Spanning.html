@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid Start or End in Row & Column</title>
+    <title>Grid Box Spanning</title>
     <style>
       .container {
         display: grid;
@@ -18,8 +18,6 @@
         border: 3px green solid;
       }
 
-      /* this property is used for shifting the boxes in a grid : 
-      if you want to see the grid then go to inspect --> click on grid --> see the number */
       #item-10 {
         grid-column-start: 3;
         grid-column-end: 4;
@@ -31,6 +29,13 @@
         grid-column-start: 2;
         grid-column-end: 3;
       }
+      
+      /* now for spanning the box 5 in row */
+      #item-5 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
     </style>
   </head>
   <body>
@@ -39,11 +44,11 @@
       <div class="items">Zanu 2</div>
       <div class="items">Zanu 3</div>
       <div class="items">Zanu 4</div>
-      <div class="items">Zanu 5</div>
+      <div class="items" id="item-5">Zanu 5</div>
       <div class="items" id="item-6">Zanu 6</div>
       <div class="items">Zanu 7</div>
       <div class="items">Zanu 8</div>
-      <div class="items">Zanu 9</div>
+      <div class="items" id="item-9">Zanu 9</div>
       <div class="items" id="item-10">Zanu 10</div>
     </div>
   </body>
