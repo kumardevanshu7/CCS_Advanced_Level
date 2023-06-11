@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions : Background Color</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        transition: width 2s, height 2s, background 2s;
+      }
+
+      .box:hover {
+        width: 500px;
+        height: 500px;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
