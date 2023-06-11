@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template : In Fraction</title>
+    <style>
+        .container{
+            display: grid;
+            /* means i created 5 columns */
+            grid-template-columns: 200px 200px 200px 200px 200px;
+
+            /* now we use Grid gap to give spaces around the boxes */
+            grid-gap: 20px;
+            
+        }
+
+        .items{
+            background-color: lightcoral;
+            border: 3px green solid;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="items">Zanu 1</div>
+        <div class="items">Zanu 2</div>
+        <div class="items">Zanu 3</div>
+        <div class="items">Zanu 4</div>
+        <div class="items">Zanu 5</div>
+        <div class="items">Zanu 6</div>
+        <div class="items">Zanu 7</div>
+        <div class="items">Zanu 8</div>
+        <div class="items">Zanu 9</div>
+        <div class="items">Zanu 10</div>
+    </div>
+    
+</body>
+</html>
